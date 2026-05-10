@@ -2,7 +2,8 @@ import pygame
 import sys
 
 from configuration import BACKGROUND, BLACK, HEIGHT, PANEL, WIDTH, FPS
-from userInterface import Button, draw_text
+from userInterface import Button, drawText
+from dataStructures import DataStructuresModule
 
 class DSAApp:
     def __init__(self):
@@ -43,9 +44,9 @@ class DSAApp:
 
         pygame.draw.rect(self.screen, PANEL, (250, 100, 500, 520), border_radius=18)
 
-        draw_text(self.screen, "DSA Explorer and Visualiser App", WIDTH // 2, 70, self.title_font, BLACK, center=True)
+        drawText(self.screen, "DSA Explorer and Visualiser App", WIDTH // 2, 70, self.title_font, BLACK, center=True)
 
-        draw_text(self.screen, "Use menu to open the interactive Pygame modules", WIDTH // 2, 130, self.small_font, BLACK, center=True)
+        drawText(self.screen, "Use menu to open the interactive Pygame modules", WIDTH // 2, 130, self.small_font, BLACK, center=True)
 
         for button in self.buttons:
             button.draw(self.screen, self.font)
@@ -57,7 +58,7 @@ class DSAApp:
         module = None
 
         if action == "data":
-            module = DataStructureModule() #naming conventions that will be used for modules
+            module = DataStructuresModule() #naming conventions that will be used for modules
         elif action == "sorting":
             module = SortingModule()
         elif action == "graphs":
