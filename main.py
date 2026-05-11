@@ -4,6 +4,8 @@ import sys
 from configuration import BACKGROUND, BLACK, HEIGHT, PANEL, WIDTH, FPS
 from userInterface import Button, drawText
 from dataStructures import DataStructuresModule
+from sortingAlgorithmVisualiser import sortingModule
+from graphVisualiser import GraphModule
 
 class DSAApp:
     def __init__(self):
@@ -60,7 +62,7 @@ class DSAApp:
         if action == "data":
             module = DataStructuresModule() #naming conventions that will be used for modules
         elif action == "sorting":
-            module = SortingModule()
+            module = sortingModule()
         elif action == "graphs":
             module = GraphModule()
         elif action == "heap":
