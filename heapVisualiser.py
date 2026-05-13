@@ -199,7 +199,7 @@ class HeapModule:
 
         drawText(
             screen,
-            "Heap and Event Queue Visualizer",
+            "Heap and Event Queue Visualiser",
             WIDTH // 2, 40,
             pygame.font.SysFont(None, 42),
             BLACK,
