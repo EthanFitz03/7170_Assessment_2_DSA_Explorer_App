@@ -7,6 +7,7 @@ from dataStructures import DataStructuresModule
 from sortingAlgorithmVisualiser import sortingModule
 from graphVisualiser import GraphModule
 from heapVisualiser import HeapModule
+from puzzleChallenge import PuzzlesModule
 
 class DSAApp:
     def __init__(self):
